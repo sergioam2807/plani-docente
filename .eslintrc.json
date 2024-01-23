@@ -2,6 +2,7 @@
   "root": true,
   "env": { "browser": true, "es2020": true },
   "extends": [
+    "eslint:recommended", "next",
     "standard-with-typescript",
     "eslint:recommended",
     "plugin:react/recommended",
@@ -24,12 +25,8 @@
     "project": ["./tsconfig.json"]
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["prettier", "react-refresh"],
+  "plugins": ["prettier"],
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "react-refresh/only-export-components": [
-      "warn",
-      { "allowConstantExport": true }
-    ]
+    "@typescript-eslint/explicit-function-return-type": "off"
   }
 }
